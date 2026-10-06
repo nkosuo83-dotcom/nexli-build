@@ -1,0 +1,1241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+html{
+    scroll-behavior:smooth ;
+}
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #050505;
+    color: white;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    padding: 25px 7%;
+    border-bottom: 1px solid #222;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 140px;
+    height: auto;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: #bdbdbd;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 62vh;
+    display: flex;
+    align-items: center;
+    padding: 70px 7%;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.eyebrow {
+    letter-spacing: 4px;
+    font-size: 13px;
+    margin-bottom: 25px;
+    color: #bdbdbd;
+}
+
+h1 {
+    font-size: clamp(52px, 8vw, 100px);
+    line-height: 0.95;
+    letter-spacing: -4px;
+    margin-bottom: 30px;
+}
+
+h1 span {
+    color: #999;
+}
+
+.hero-content > p {
+    color: #aaa;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 620px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    display: inline-block;
+    padding: 16px 28px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.primary {
+    background: white;
+    color: black;
+}
+
+.primary:hover {
+    transform: translateY(-3px);
+}
+
+.secondary {
+    border: 1px solid #555;
+    color: white;
+}
+
+.secondary:hover {
+    border-color: white;
+    transform: translateY(-3px);
+}
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    padding: 120px 7%;
+    background: #0a0a0a;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin-bottom: 60px;
+}
+
+.section-heading h2 {
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1;
+    letter-spacing: -3px;
+    margin-bottom: 25px;
+}
+
+.section-heading h2 span {
+    color: #888;
+}
+
+.section-heading > p:last-child {
+    color: #999;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.services-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    padding: 40px;
+    border: 1px solid #292929;
+    background: #0f0f0f;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #999;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #777;
+}
+/* =========================
+   WHY NEXLI BUILD
+========================= */
+
+.why-us {
+    padding: 120px 7%;
+    background: #050505;
+    border-top: 1px solid #222;
+}
+
+.features-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    border-top: 1px solid #292929;
+    border-left: 1px solid #292929;
+}
+
+.feature {
+    padding: 45px;
+    min-height: 260px;
+    border-right: 1px solid #292929;
+    border-bottom: 1px solid #292929;
+    transition: background 0.3s ease;
+}
+
+.feature:hover {
+    background: #101010;
+}
+
+.feature-number {
+    color: #777;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+.feature h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.feature p {
+    color: #999;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 450px;
+}
+/* =========================
+   PORTFOLIO
+========================= */
+
+.portfolio {
+    padding: 120px 7%;
+    background: #0a0a0a;
+    border-top: 1px solid #222;
+}
+
+.portfolio-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    border: 1px solid #292929;
+    background: #0f0f0f;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #777;
+}
+
+.project-image {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #151515;
+    border-bottom: 1px solid #292929;
+}
+
+.project-image span {
+    color: #666;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.project-info {
+    padding: 25px 30px 30px;
+}
+
+.project-info p {
+    color: #777;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.project-info h3 {
+    font-size: 24px;
+}
+/* =========================
+   PRICING
+========================= */
+
+.pricing {
+    padding: 120px 7%;
+    background: #050505;
+    border-top: 1px solid #222;
+}
+
+.pricing-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.price-card {
+    padding: 40px;
+    background: #0d0d0d;
+    border: 1px solid #292929;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+    border-color: #777;
+}
+
+.price-card.featured {
+    border-color: #777;
+}
+
+.price-type {
+    color: #777;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.price-card h3 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.price-card > p:not(.price-type) {
+    color: #999;
+    font-size: 16px;
+    line-height: 1.7;
+    min-height: 80px;
+}
+
+.price-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 22px;
+    border: 1px solid #555;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.price-button:hover {
+    background: white;
+    color: black;
+}
+
+.pricing-note {
+    max-width: 1200px;
+    margin: 35px auto 0;
+    padding: 20px;
+    border: 1px solid #292929;
+    color: #888;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.pricing-note strong {
+    color: white;
+}
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    padding: 120px 7%;
+    background: #0a0a0a;
+    border-top: 1px solid #222;
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+.about-content h2 {
+    font-size: clamp(45px, 6vw, 75px);
+    line-height: 1;
+    letter-spacing: -3px;
+}
+
+.about-content h2 span {
+    color: #888;
+}
+
+.about-text {
+    max-width: 550px;
+}
+
+.about-text p {
+    color: #999;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    padding: 140px 7%;
+    background: #050505;
+    border-top: 1px solid #222;
+}
+
+.contact-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-content h2 {
+    font-size: clamp(50px, 8vw, 90px);
+    line-height: 0.95;
+    letter-spacing: -4px;
+    margin-bottom: 30px;
+}
+
+.contact-content h2 span {
+    color: #888;
+}
+
+.contact-content > p:not(.eyebrow) {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #999;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.contact-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 16px 28px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.contact-button.primary {
+    background: white;
+    color: black;
+}
+
+.contact-button.secondary {
+    border: 1px solid #555;
+    color: white;
+}
+
+.contact-button:hover {
+    transform: translateY(-3px);
+}
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: #000;
+    border-top: 1px solid #222;
+    padding: 70px 7% 25px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.footer-brand {
+    max-width: 400px;
+}
+
+.footer-brand h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    color: #777;
+    line-height: 1.7;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding-top: 25px;
+
+    border-top: 1px solid #222;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    color: #555;
+    font-size: 14px;
+}
+
+
+/* =========================
+   MOBILE FOOTER
+========================= */
+
+@media (max-width: 700px) {
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+}
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    /* HEADER */
+
+    header {
+        padding: 20px 6%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 15px 20px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 62vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 45px 7%;
+    }
+
+    h1 {
+        font-size: clamp(48px, 15vw, 70px);
+        letter-spacing: -3px;
+    }
+
+    .hero-content > p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+
+    /* SERVICES */
+
+    .services {
+        padding: 90px 6%;
+    }
+
+    .section-heading {
+        margin-bottom: 45px;
+    }
+
+    .section-heading h2 {
+        font-size: clamp(42px, 12vw, 60px);
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 30px;
+    }
+
+
+    /* WHY NEXLI BUILD */
+
+    .why-us {
+        padding: 90px 6%;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature {
+        padding: 30px;
+        min-height: auto;
+    }
+
+
+    /* PORTFOLIO */
+
+    .portfolio {
+        padding: 90px 6%;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image {
+        height: 240px;
+    }
+
+
+    /* PRICING */
+
+    .pricing {
+        padding: 90px 6%;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .price-card {
+        padding: 30px;
+    }
+
+
+    /* ABOUT */
+
+    .about {
+        padding: 90px 6%;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+
+    /* CONTACT */
+
+    .contact {
+        padding: 100px 6%;
+    }
+
+    .contact-content h2 {
+        font-size: clamp(48px, 14vw, 70px);
+    }
+
+    .contact-actions {
+        flex-direction: column;
+    }
+
+    .contact-button {
+        text-align: center;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        padding: 60px 6% 25px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+}
+/* =========================
+   PORTFOLIO VISUAL UPGRADE
+========================= */
+
+.project-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border: 1px solid #333;
+    transform: rotate(-8deg);
+}
+
+.project-image::after {
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 45%;
+    border: 1px solid #444;
+    transform: rotate(8deg);
+}
+
+.project-image span {
+    position: relative;
+    z-index: 2;
+    background: #151515;
+    padding: 12px 18px;
+}
+
+.project-info {
+    transition: background 0.3s ease;
+}
+
+.project-card:hover .project-info {
+    background: #121212;
+}
+/* =========================
+   MOBILE MENU BUTTON
+========================= */
+
+.menu-toggle {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    pointer-events: auto;
+}
+
+
+@media (max-width: 700px) {
+
+    nav {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+@media (max-width: 700px) {
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 15px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+/* =========================
+   CONTACT FORM
+========================= */
+
+.contact-form {
+    max-width: 850px;
+    margin: 50px auto 0;
+    text-align: left;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 9px;
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 16px 18px;
+    background: #0d0d0d;
+    border: 1px solid #292929;
+    color: white;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #666;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #777;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-group select {
+    appearance: none;
+}
+
+.form-submit {
+    width: 100%;
+    padding: 17px 25px;
+    background: white;
+    color: black;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.form-submit:hover {
+    transform: translateY(-3px);
+    background: #ddd;
+}
+
+/* MOBILE CONTACT FORM */
+
+@media (max-width: 700px) {
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .contact-form {
+        margin-top: 40px;
+    }
+}
+section {
+    scroll-margin-top: 30px;
+}
+/* Coding Animation */
+.coding-animation {
+    width: min(720px, 90%);
+    margin: 0 auto 45px;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.code-window {
+    width: 520px;
+    max-width: 90%;
+    background: #0b0b0b;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.code-top {
+    height: 38px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 0 14px;
+    background: #151515;
+    border-bottom: 1px solid #292929;
+}
+
+.code-top span {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #555;
+}
+
+.code-content {
+    padding: 20px 24px;
+    text-align: left;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #bdbdbd;
+    min-height: 170px;
+}
+
+.code-content p {
+    margin: 0;
+    white-space: pre;
+}
+
+.typing-cursor {
+    display: inline-block;
+    margin-left: 2px;
+    color: white;
+    font-weight: bold;
+    animation: blinkCursor 0.8s infinite;
+}
+
+
+.code-content p {
+    margin: 0;
+}
+
+.typing-cursor {
+    color: white;
+    animation: blinkCursor 0.8s infinite;
+}
+
+@keyframes blinkCursor {
+    0%, 49% {
+        opacity: 1;
+    }
+
+    50%, 100% {
+        opacity: 0;
+    }
+}
+@media (max-width: 700px) {
+    .coding-animation {
+        margin-bottom: 25px;
+    }
+
+    .code-window {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .code-content {
+        padding: 16px;
+        font-size: 11px;
+        line-height: 1.7;
+    }
+}
+.code-window {
+    animation: floatCode 4s ease-in-out infinite;
+}
+
+@keyframes floatCode {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+.code-label {
+    padding: 9px 14px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #888;
+    background: #0b0b0b;
+    border-bottom: 1px solid #222;
+}
+
+.code-label span {
+    color: #555;
+    font-weight: 400;
+}
+
+.code-window {
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.45),
+        0 0 35px rgba(255, 255, 255, 0.04);
+}
+.hero h1 {
+    font-size: clamp(42px, 6vw, 78px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin: 15px 0 20px;
+    font-weight: 800;
+}
+
+.hero h1 span {
+    color: #888;
+}
+.hero-content > p:not(.eyebrow) {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #aaa;
+    font-size: 17px;
+    line-height: 1.8;
+}
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.hero-buttons .btn {
+    min-width: 170px;
+    text-align: center;
+}
+.hero .eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #999;
+    margin-bottom: 12px;
+}
+.code-content p {
+    color: #999;
+}
+
+.code-content p:nth-child(1),
+.code-content p:nth-child(5) {
+    color: #777;
+}
+
+.code-content p:nth-child(3) {
+    color: #ddd;
+}
+@media (max-width: 700px) {
+    nav {
+        padding-bottom: 10px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .menu-toggle {
+        top: 5px;
+    }
+}
+@media (max-width: 700px) {
+    .hero {
+        min-height: auto;
+        padding: 40px 6% 60px;
+    }
+
+    .coding-animation {
+        margin-bottom: 22px;
+    }
+
+    .hero h1 {
+        font-size: clamp(38px, 11vw, 52px);
+        letter-spacing: -1px;
+    }
+
+    .hero .eyebrow {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .hero-content > p:not(.eyebrow) {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+}
+/* =========================
+   WELCOME SCREEN
+========================= */
+
+.welcome-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: #050505;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.welcome-content p {
+    margin: 0 0 12px;
+    font-size: 13px;
+    letter-spacing: 5px;
+    color: #999;
+}
+
+.welcome-content h1 {
+    margin: 0;
+    font-size: clamp(42px, 8vw, 90px);
+    letter-spacing: 3px;
+    color: white;
+}
+.welcome-screen {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.welcome-screen.hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+/* =========================
+   WHATSAPP FLOAT BUTTON
+========================= */
+
+.whatsapp-float {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 999;
+    padding: 14px 20px;
+    background: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-4px);
+    background: #dddddd;
+}
+
+@media (max-width: 700px) {
+    .whatsapp-float {
+        right: 15px;
+        bottom: 15px;
+        padding: 12px 16px;
+        font-size: 13px;
+    }
+}
+.coding-animation {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 18px;
+}
+
+.code-content {
+    font-size: 12px;
+    overflow-x: auto;
+}
